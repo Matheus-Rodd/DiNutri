@@ -108,21 +108,6 @@ form button:hover {
     text-decoration: underline;
 }
 
-.logout-button {
-    background-color: #058C42;
-    color: #ffffff;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-
-}
-
-.logout-button:hover {
-    background-color: #047235af;
-}
-
 .back-button {
     display: inline-block;
     margin-top: 20px;
