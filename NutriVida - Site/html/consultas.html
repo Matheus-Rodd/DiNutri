@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriVida - Consultas</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo-container">
+            <a href="/html/home pós login.html"> 
+              <img src="/img/NutriVida - Logo.png" alt="NutriVida Logo" class="logo">
+            </a> 
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Agendamento de Consultas</h2>
+            <form action="/html/consulta agendada.html" method="get">                
+                <label for="nomeUsuario">Nome:</label>
+                <input type="text" id="nomeUsuario" required>
+
+                <label for="dataCancel">Data da Consulta:</label>
+                <input type="date" id="dataCancel" required>
+
+                <label for="medico">Médico:</label>
+            <select id="medico" name="medico" required>
+                <option value="">Selecione um médico</option>
+                <option value="medico1">Dra. Fernanda Lima</option>
+                <option value="medico2">Dr. Lucas Almeida</option>
+                <option value="medico3">Dra. Mariana Costa</option>
+            </select>
+
+            <label for="especialidade">Especialidade:</label>
+            <select id="especialidade" name="especialidade" required>
+                <option value="">Selecione uma especialidade</option>
+                <option value="nutricao">Nutrição Clínica</option>
+                <option value="cardiologia">Nutrição Esportiva</option>
+                <option value="pediatria">Nutrição Materno Infantil</option>
+            </select>
+
+            <button type="submit">Agendar Consulta</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Cancelar Agendamento</h3>
+            <form action="/html/consulta cancelada.html" method="get">
+                <label for="pacienteCancel">Paciente:</label>
+                <input type="text" id="pacienteCancel" required>
+
+                <label for="dataCancel">Data da Consulta:</label>
+                <input type="date" id="dataCancel" required>
+
+                <label for="medico">Médico:</label>
+                <select id="medico" name="medico" required>
+                    <option value="">Selecione um médico</option>
+                    <option value="medico1">Dra. Fernanda Lima</option>
+                    <option value="medico2">Dr. Lucas Almeida</option>
+                    <option value="medico3">Dra. Mariana Costa</option>
+                </select>    
+
+                <button type="submit">Cancelar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NutriVida. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
