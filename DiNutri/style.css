@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #dbe1ed;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.intro-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.intro-text h2 {
+    font-size: 2em;
+    color: #00bf63;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.intro-img {
+    flex: 1;
+}
+
+.intro-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Seção de serviços */
+.services {
+    padding: 50px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.services h2 {
+    font-size: 2em;
+    color: #00bf63;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #00bf63;
+    margin: 10px 0;
+}
+
+.service p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-text, .intro-img {
+        margin: 0;
+    }
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    padding: 20px;
+}
+
+footer {
+    background-color: #058C42;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #058C42;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #058C42;
+}
+
+/* esqueci a senha */
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #058C42;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.back-to-login {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #058C42;
+    text-decoration: none;
+}
+
+.back-to-login:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #058C42;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #058C42;
+}
